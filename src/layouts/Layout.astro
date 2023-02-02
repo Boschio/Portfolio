@@ -1,0 +1,36 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import '../styles/global.css';
+
+export interface Props {
+	title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class='min-h-screen'>
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body class='min-h-screen min-w-fit'>
+		<Navbar />
+		<slot />
+		<Footer />
+		<script>
+			document.querySelector('.hamburger').addEventListener('click', () => {
+				document.querySelector('.nav-links').classList.toggle('hidden');
+				document.querySelector('.nav-list').classList.toggle('flex-col');
+				document.querySelector('.navbar').classList.toggle('flex-col');
+				document.querySelector('.nav-list').classList.toggle('text-2xl');
+				document.querySelector('.join-button').classList.toggle('w-[184px]');
+			});
+		  </script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Project from '../components/Project.astro'
+---
+<Layout>
+	<main class='flex flex-col justify-around items-center my-9 container mx-auto lg:px-0 px-4'>
+		<h1>Projects</h1>
+        <Project 
+        title='GameOn!'
+        img='/placeholder-hero.jpg'
+        details='Details about this project. Fill this out with as much detail possible.'
+        techStack='Tech Stack used.'
+        github='https://github.com/LABS-Codepath/GameOn' />
+
+        <Project 
+        title='Lehman College CS Club Website'
+        img='/placeholder-hero.jpg'
+        details='Details about this project. Fill this out with as much detail possible.'
+        techStack='Tech Stack used.'
+        link='https://lehmancs.club' />
+	</main>
+
+</Layout>

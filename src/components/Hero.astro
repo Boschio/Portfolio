@@ -1,0 +1,20 @@
+---
+import Button from '../components/Button.astro';
+import { SELFIE, RESUME } from '../consts';
+---
+<div class='flex lg:flex-row flex-col justify-around items-center my-9 container mx-auto lg:px-0 px-4'>
+    <div class='max-w-prose'>
+      <h1 class=''>James A. Bosch</h1>
+      <p class='py-4'>Aspiring Software Engineer</p>
+      <Button text="Resume" link={RESUME} target='_blank' />
+    </div>
+    <div class="max-h-prose lg:pl-8">
+      <img
+        class='rounded-2xl shadow-lg shadow-slate-500/30 border-1'
+        src={SELFIE}
+        alt="It's me"
+        width={500}
+        height="auto"
+      />
+    </div>
+</div>
