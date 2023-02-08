@@ -4,19 +4,19 @@ import Project from '../components/Project.astro'
 ---
 <Layout>
 	<main class='flex flex-col justify-around items-center my-9 container mx-auto lg:px-0 px-4'>
-		<h1>Projects</h1>
+		<h1 class='text-2xl font-bold py-8'>Check out some of my Projects.</h1>
         <Project 
         title='GameOn!'
-        img='/placeholder-hero.jpg'
-        details='Details about this project. Fill this out with as much detail possible.'
-        techStack='Tech Stack used.'
+        img='/gameon.png'
+        details='Led and coordinated a team of 4 to plan and develop this application within 4 weeks. Our goal was to create an event hosting application with a focus on the gaming community.'
+        techStack="Developed with the PERN stack and Chakra UI React library. Implemented Twitch's IGDB API."
         github='https://github.com/LABS-Codepath/GameOn' />
 
         <Project 
         title='Lehman College CS Club Website'
-        img='/placeholder-hero.jpg'
-        details='Details about this project. Fill this out with as much detail possible.'
-        techStack='Tech Stack used.'
+        img='/lehmancs.png'
+        details='I created this website for the Lehman College CS Club. The purpose of this site is to have an easy access hub for students to learn about the club and see upcoming events.'
+        techStack='Developed with Astro.js and Tailwind CSS for enhanced page responsiveness and speed. Deployed via Netlify.'
         link='https://lehmancs.club' />
 	</main>
 

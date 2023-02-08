@@ -2,12 +2,15 @@
 const today = new Date();
 ---
 
-<footer>
-	&copy; {today.getFullYear()} James A Bosch. All rights reserved.
+<footer class='bg-[#580d0de6] text-white py-2 flex align-center justify-center sticky top-[100vh]'>
+	<div class='flex flex-col flex-initial justify-center align-center'>
+        <ul class='list-none flex justify-center py-1'>
+            <li class='px-2'><a href='https://github.com/Boschio' class='' target='_blank'><img src='/icons/github.svg' class='w-4 h-auto'></a></li>
+            <li class='px-2'><a href='https://www.linkedin.com/in/james-bosch/' class='' target='_blank'><img src='/icons/linkedin.svg' class='w-4 h-auto'></a></li>
+        </ul>
+        <a class='hover:text-orange-400 text-center' href="mailto:Boschio91@gmail.com">Boschio91@gmail.com</a>
+        <p class='text-md'>
+            &copy; {today.getFullYear()} James A Bosch. All rights reserved.
+        </p>
+    </div>
 </footer>
-<style>
-	footer {
-		padding: 25px;
-		text-align: center;
-	}
-</style>

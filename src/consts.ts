@@ -5,3 +5,4 @@ export const SITE_TITLE = 'James A. Bosch';
 export const SITE_DESCRIPTION = 'Hire me.';
 export const RESUME: string = "/resume.pdf";
 export const SELFIE: string = "/me.jpg";
+export const ECT: string = "/ectv.jpg";

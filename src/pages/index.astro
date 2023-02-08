@@ -1,10 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro'
+import Hero from '../components/Hero.astro';
+import Button from '../components/Button.astro';
+import { SELFIE, RESUME } from '../consts';
 ---
 <Layout>
-	<main class='flex lg:flex-row flex-col justify-around items-center my-9 container mx-auto lg:px-0 px-4'>
-		<Hero />
-
+	<main class='pt-24 pb-12 flex-grow flex flex-col container mx-auto h-full '>
+		<div class='flex lg:flex-row flex-col justify-around items-center container mx-auto lg:px-0 px-4 relative lg:pt-0 h-full my-auto'>
+			<div class='max-w-prose font-bold'>
+			  <h1 class='text-6xl'>James A. Bosch</h1>
+			  <p class='title-part text-4xl py-4'>Aspiring Software Engineer</p>
+			</div>
+			<div class="max-h-prose lg:pl-8">
+			  <img
+				class='rounded-full shadow-lg shadow-slate-500/30 border-1'
+				src={SELFIE}
+				alt="It's me"
+				width={500}
+				height="auto"
+			  />
+			</div>
+		</div>
 	</main>
 </Layout>
