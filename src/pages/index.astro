@@ -4,20 +4,22 @@ import Button from '../components/Button.astro';
 import { SELFIE, RESUME } from '../consts';
 ---
 <Layout>
-	<main class='xl:pt-8 pb-12 flex-grow flex flex-col container mx-auto h-full '>
-		<div class='flex lg:flex-row flex-col justify-around items-center container mx-auto lg:px-0 px-4 relative lg:pt-0 h-full my-auto'>
-			<div class='max-w-prose font-bold'>
-			  <h1 class='text-5xl md:text-6xl'>James A. Bosch</h1>
-			  <p class='title-part text-3xl md:text-4xl py-4'>Aspiring Software Engineer</p>
-			</div>
-			<div class="max-h-prose lg:pl-8">
-			  <img
-				class='rounded-full shadow-lg shadow-slate-500/30 border-1'
-				src={SELFIE}
-				alt="It's me"
-				width={500}
-				height="auto"
-			  />
+	<main class='flex h-screen max-[420px]:h-[82vh] sm:h-[88vh] justify-center items-center'>
+		<div class='flex-grow flex flex-col container mx-auto h-full'>
+			<div class='flex lg:flex-row flex-col xl:justify-around items-center container mx-auto lg:px-0 px-4 relative lg:pt-0 my-auto'>
+				<div class='max-w-prose font-bold'>
+				  <h1 class='text-4xl sm:text-5xl md:text-6xl'>James A. Bosch</h1>
+				  <p class='title-part text-2xl sm:text-3xl md:text-4xl py-4'>Aspiring Software Engineer</p>
+				</div>
+				<div class="max-h-prose lg:pl-8">
+				  <img
+					class='rounded-full shadow-lg shadow-slate-500/30 border-1'
+					src={SELFIE}
+					alt="It's me"
+					width={500}
+					height="auto"
+				  />
+				</div>
 			</div>
 		</div>
 	</main>

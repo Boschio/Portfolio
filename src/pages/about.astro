@@ -6,29 +6,31 @@ const age = Math.floor(
 ---
 
 <Layout>
-  <main class='xl:pt-12 pb-12 flex-grow flex flex-col container mx-auto h-full'>
-    <section class='my-auto container mx-auto p-4 rounded-lg'>    
-      <div class='flex flex-col xl:flex-row gap-y-6 items-center content-center'>
-        <img
-          class='rounded-lg shadow-lg shadow-slate-500/30 border-1 mx-5'
-          src={ECT}
-          alt="It's me"
-          width={700}
-          height="auto"
-        />
-        <div class='flex flex-col bg-[#580d0de6] text-white rounded-lg p-4 mx-5 gap-y-4'>
-          <h3 class='text-lg font-bold'>Hi, I'm James.</h3>
-          <p>
-            Some people call me Bosch. <br><br>I am {age} years old, born and raised in NY. I'm a former IT professional who is currently attending Lehman College for Computer Science. My goal is to graduate and become a Software Engineer!
-          </p>
-          <p>
-            I am passionate about gaming, especially fighting games and the community around it. I hope to use my software engineering skills to create fun and innovative apps, as well as to work closely, support, and uplift those communities close to me.
-          </p>
-          <p>
-            My hobbies include playing and competing in fighting games, traveling, and building PCs.
-          </p>
+  <main class='flex h-full sm:h-[88vh] justify-center items-center'>
+    <div class='flex-grow flex flex-col container mx-auto h-full'>
+      <section class='my-auto container mx-auto p-4 rounded-lg'>    
+        <div class='flex flex-col xl:flex-row gap-y-6 items-center content-center'>
+          <img
+            class='rounded-lg shadow-lg shadow-slate-500/30 border-1 mx-5'
+            src={ECT}
+            alt="It's me"
+            width={700}
+            height="auto"
+          />
+          <div class='flex flex-col bg-[#580d0de6] text-white rounded-lg p-4 mx-5 gap-y-4'>
+            <h3 class='text-lg font-bold'>Hi, I'm James.</h3>
+            <p>
+              Some people call me Bosch. <br><br>I am {age} years old, born and raised in NY. I'm a former IT professional who is currently attending Lehman College for Computer Science. My goal is to graduate and become a Software Engineer!
+            </p>
+            <p>
+              I am passionate about gaming, especially fighting games and the community around it. I hope to use my software engineering skills to create fun and innovative apps, as well as to work closely, support, and uplift those communities close to me.
+            </p>
+            <p>
+              My hobbies include playing and competing in fighting games, traveling, and building PCs.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 </Layout>
